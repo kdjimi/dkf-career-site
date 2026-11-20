@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>DKF-CAREER : assistant de recherche d'opportunités en génie civil et BTP</title>
+  <meta name="description" content="DKF-CAREER est un assistant personnel de recherche, d'organisation et d'analyse d'opportunités professionnelles (stages de fin d'études, alternances, premiers emplois) dans le génie civil et le BTP.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="logo" href="#accueil" aria-label="DKF-CAREER, retour à l'accueil">
+        <img src="assets/favicon.svg" alt="" width="28" height="28">
+        <span>DKF-CAREER</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav">
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#sources">Sources</a></li>
+          <li><a href="#confidentialite">Confidentialité</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- A. ACCUEIL -->
+    <section id="accueil" class="hero">
+      <div class="conteneur hero__grille">
+        <div>
+          <p class="surtitre">Génie civil · Bâtiment · Travaux publics</p>
+          <h1>DKF-CAREER</h1>
+          <p class="hero__sous-titre">Assistant intelligent de recherche d'opportunités professionnelles dans le génie civil et le BTP.</p>
+          <ul class="pastilles" aria-label="Principes">
+            <li>Outil personnel</li>
+            <li>Usage non commercial</li>
+            <li>Aucune candidature sans validation humaine</li>
+          </ul>
+          <div class="actions">
+            <a class="bouton bouton--plein" href="#fonctionnalites">Découvrir les fonctionnalités</a>
+            <a class="bouton bouton--contour" href="#confidentialite">Confidentialité</a>
+          </div>
+        </div>
+        <div class="hero__carte" aria-hidden="true">
+          <div class="carte-demo">
+            <div class="carte-demo__ligne"><span class="score">88</span><div><strong>Stage de fin d'études</strong><small>Ingénieur travaux · génie civil</small></div></div>
+            <div class="carte-demo__ligne"><span class="score score--moyen">72</span><div><strong>Alternance</strong><small>Conducteur de travaux</small></div></div>
+            <div class="carte-demo__ligne"><span class="score score--moyen">69</span><div><strong>Premier emploi</strong><small>Ingénieur bureau d'études</small></div></div>
+            <p class="carte-demo__legende">Exemple illustratif de classement par pertinence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B. PRÉSENTATION -->
+    <section id="presentation" class="section">
+      <div class="conteneur">
+        <h2>Présentation</h2>
+        <p class="chapeau">DKF-CAREER facilite la recherche, l'organisation et l'analyse des opportunités professionnelles d'un candidat en génie civil et en BTP. L'application rassemble des offres issues de sources autorisées, élimine les doublons, évalue leur pertinence au regard d'un profil vérifié et aide à préparer des candidatures sincères.</p>
+        <div class="trio">
+          <div class="trio__case"><h3>Pour qui ?</h3><p>Un étudiant ou jeune diplômé qui recherche un stage de fin d'études, une alternance ou un premier emploi dans le génie civil, le bâtiment ou les travaux publics.</p></div>
+          <div class="trio__case"><h3>Comment ?</h3><p>L'application fonctionne localement, sur l'ordinateur de son utilisateur. Elle s'appuie sur Python et sur des outils open source de suivi de candidatures.</p></div>
+          <div class="trio__case"><h3>Avec quelles garanties ?</h3><p>Aucune information professionnelle n'est inventée, et aucune candidature n'est envoyée sans la validation explicite de l'utilisateur.</p></div>
+        </div>
+
+        <h3 class="sous-titre-section">Fonctionnement</h3>
+        <ol class="etapes">
+          <li><span>1</span><strong>Collecte</strong><p>Récupération d'offres depuis des sources autorisées.</p></li>
+          <li><span>2</span><strong>Dédoublonnage</strong><p>Une même offre vue sur plusieurs sources n'apparaît qu'une fois.</p></li>
+          <li><span>3</span><strong>Classement</strong><p>Score de pertinence expliqué, type de contrat et points d'attention.</p></li>
+          <li><span>4</span><strong>Préparation et validation</strong><p>Dossier préparé, vérifié, puis soumis à l'utilisateur.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- C. FONCTIONNALITÉS -->
+    <section id="fonctionnalites" class="section section--claire">
+      <div class="conteneur">
+        <h2>Fonctionnalités disponibles</h2>
+        <p class="chapeau">Les fonctionnalités ci-dessous sont opérationnelles et couvertes par des tests automatisés.</p>
+        <div class="grille-cartes">
+          <article class="carte">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <h3>Recherche d'offres</h3>
+            <p>Collecte d'offres de stages, d'alternances et d'emplois depuis des API officielles et des pages carrières publiques d'entreprises, dans le respect des quotas et des conditions d'utilisation.</p>
+          </article>
+          <article class="carte">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <h3>Centralisation des opportunités</h3>
+            <p>Regroupement des offres dans une base locale unique, avec détection des doublons entre sources et conservation de l'annonce complète.</p>
+          </article>
+          <article class="carte">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            <h3>Analyse de pertinence</h3>
+            <p>Score sur 100 justifié par des raisons lisibles : métier, type de contrat, localisation, compétences communes, fraîcheur. Signalement des exigences d'expérience, de diplôme ou de langue.</p>
+          </article>
+          <article class="carte">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg>
+            <h3>Identification des entreprises</h3>
+            <p>Repérage d'entreprises du secteur susceptibles de recruter, classées par activité, distance et taille, distinctement des offres publiées.</p>
+          </article>
+          <article class="carte">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 14l2.5 2.5L16 11"/></svg>
+            <h3>Préparation de candidatures</h3>
+            <p>Analyse de l'annonce, CV adapté et lettre de motivation spécifique, avec un contrôle de véracité qui bloque tout fait absent du profil vérifié.</p>
+          </article>
+          <article class="carte">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+            <h3>Suivi des opportunités</h3>
+            <p>Statut de chaque opportunité conservé dans un registre local (enregistrée, en préparation, envoyée, entretien, réponse), avec historique des opérations.</p>
+          </article>
+        </div>
+
+        <div class="encart">
+          <h3>En préparation</h3>
+          <p>Ces éléments ne sont <strong>pas encore disponibles</strong> :</p>
+          <ul>
+            <li>connexion à l'API Offres d'emploi de France Travail, sous réserve de l'obtention d'un accès ;</li>
+            <li>exécution quotidienne automatique de la collecte et du classement ;</li>
+            <li>synchronisation avec un tableau de bord de suivi de type Kanban.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. SOURCES -->
+    <section id="sources" class="section">
+      <div class="conteneur">
+        <h2>Sources de données</h2>
+        <p class="chapeau">DKF-CAREER n'utilise que des sources publiques ou des accès officiellement autorisés.</p>
+        <div class="grille-sources">
+          <div class="source"><h3>API publiques de l'emploi et de l'alternance</h3><p>Services publics d'offres d'emploi et d'alternance, interrogés via leurs API officielles avec une clé personnelle, dans le respect des quotas et d'un usage non commercial.</p></div>
+          <div class="source"><h3>Pages carrières d'entreprises</h3><p>Offres publiées par des entreprises du secteur sur leurs pages carrières, consultées via les interfaces publiques prévues pour la diffusion des offres.</p></div>
+          <div class="source"><h3>Outils open source de recherche d'emploi</h3><p>Index local d'offres et registre de candidatures fournis par des logiciels libres exécutés sur l'ordinateur de l'utilisateur.</p></div>
+          <div class="source"><h3>Alertes choisies par l'utilisateur</h3><p>Uniquement si l'utilisateur l'autorise : lecture seule d'un dossier d'alertes de recrutement qu'il a lui-même configuré.</p></div>
+        </div>
+        <p class="avertissement">DKF-CAREER est un projet indépendant et personnel. Il n'est ni affilié, ni soutenu, ni approuvé par France Travail, La bonne alternance ou tout autre organisme ou entreprise cité dans les offres. Aucun contenu n'est collecté par extraction automatique de sites qui l'interdisent.</p>
+      </div>
+    </section>
+
+    <!-- E. CONFIDENTIALITÉ -->
+    <section id="confidentialite" class="section section--claire">
+      <div class="conteneur">
+        <h2>Confidentialité</h2>
+        <div class="deux-colonnes">
+          <div>
+            <h3>Ce site</h3>
+            <ul class="liste-coches">
+              <li>Aucun compte utilisateur.</li>
+              <li>Aucun formulaire et aucune collecte de données personnelles.</li>
+              <li>Aucun cookie, aucun outil de mesure d'audience, aucun traceur.</li>
+              <li>Aucune ressource tierce : pas de police, de script ou d'image chargés depuis un autre site.</li>
+            </ul>
+            <p class="petit">Le site est hébergé par GitHub Pages. Comme tout hébergeur, GitHub peut enregistrer des journaux techniques (par exemple l'adresse IP) pour la sécurité de son service, selon sa propre déclaration de confidentialité.</p>
+          </div>
+          <div>
+            <h3>L'application</h3>
+            <ul class="liste-coches">
+              <li>Fonctionne localement, sur l'ordinateur de son utilisateur.</li>
+              <li>Les données de candidature restent sur cet ordinateur.</li>
+              <li>Les clés d'accès aux API sont stockées localement et ne sont jamais publiées.</li>
+              <li>Les services d'offres ne reçoivent que des critères de recherche, jamais de CV.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. CONTACT -->
+    <section id="contact" class="section">
+      <div class="conteneur conteneur--etroit">
+        <h2>Contact</h2>
+        <p class="chapeau">Pour toute question relative à ce projet, notamment de la part d'un fournisseur d'API, vous pouvez ouvrir une demande sur la page GitHub du projet.</p>
+        <a class="bouton bouton--plein" href="https://github.com/kdjimi/dkf-career-site/issues" rel="noopener noreferrer">Ouvrir une demande sur GitHub</a>
+        <p class="petit">Aucune adresse électronique n'est publiée sur ce site afin de protéger la vie privée de son auteur.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied__grille">
+      <div>
+        <p class="logo logo--pied"><img src="assets/favicon.svg" alt="" width="22" height="22"> <span>DKF-CAREER</span></p>
+        <p class="petit">Projet personnel et non commercial. © 2026 DKF-CAREER.</p>
+      </div>
+      <div>
+        <p class="pied__titre">Mentions légales</p>
+        <p class="petit">Éditeur : particulier, à titre non professionnel.<br>Hébergeur : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+      </div>
+      <div>
+        <p class="pied__titre">Mise à jour</p>
+        <p class="petit">Novembre 2026</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
